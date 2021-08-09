@@ -1,0 +1,16 @@
+拼多多后台分析：
+	
+	接口：https://mms.pinduoduo.com/sydney/api/goodsDataShow/queryGoodsDetailVOListForMMS
+	
+	请求方式：post
+	
+	加密参数：
+		headers里面：
+			anti-content  来源暂时未知
+			webspiderrule  请求ft的一个链接返回 
+								链接：https://api.yangkeduo.com/api/phantom/web/en/ft
+								请求方式：post
+								headers里面暂无加密参数
+								data：{scene: "cp_b_data_center"}
+		data里面：
+			crawlerInfo参数值就是anti-content的参数值
